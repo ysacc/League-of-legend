@@ -10,16 +10,21 @@ const ResultCard = ({ result, query }) => {
 
   return (
     <div className={styles.test}>
-      <h3>NOMBRE: {championData.name}</h3>
+      <div>
+      <h2>{championData.name}</h2>
       <Image
+      className={styles.img}
         src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${query}_0.jpg`}
         alt={result.data.name}
         width={200}
         height={400}
         />
-      <h2>TITULO: {championData.title}</h2>
+      </div>
       <div>
-        <p>Descripción: {championData.lore}</p>
+      <h2>{championData.title}</h2>
+      <div>
+        <p>{championData.lore}</p>
+      </div>
       </div>
       <div>
         <h4>Consejos para aliados:</h4>
@@ -38,7 +43,8 @@ const ResultCard = ({ result, query }) => {
         </ul>
       </div>
       <div>
-        <h4>Tags:</h4>
+      <div>
+        <h4>Funcion:</h4>
         <ul>
           {championData.tags.map((tag, index) => (
             <li key={index}>{tag}</li>
@@ -54,6 +60,7 @@ const ResultCard = ({ result, query }) => {
         <p>Defensa: {championData.info.defense}</p>
         <p>Magic: {championData.info.magic}</p>
         <p>Dificultad: {championData.info.difficulty}</p>
+      </div>
       </div>
       {/* Puedes mostrar más información según tus necesidades */}
     </div>

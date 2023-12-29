@@ -13,9 +13,10 @@ const ResultItems= ({ result, itemName }) => {
        {filteredItems.map(item => (
         <div key={item.id} className={styles.card}>
           {/* Aquí puedes renderizar la información de cada ítem */}
-          <h3>NOMBRE: {item.name}</h3>
-          <p>Descripción: {item.plaintext}</p>
+          <h3>{item.name}</h3>
+          <p>{item.plaintext}</p>
           <Image
+          className={styles.img}
             src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/item/${item.image.full}`}
             alt={item.name}
             width={60}

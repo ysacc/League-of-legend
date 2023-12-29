@@ -2,29 +2,47 @@
 
 .test {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Cambia la dirección a fila para que sea horizontal */
   align-items: center;
-  text-align: center;
+  text-align: left; /* Alinea el texto a la izquierda */
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
   margin: 10px;
-  max-width: 400px; /* Ancho máximo de la tarjeta */
+  max-width: auto; /* Ancho máximo de la tarjeta */
+  max-height: auto;
 }
 
 .test img {
-  width: 100%; /* La imagen ocupará el 100% del contenedor */
+  width: auto; /* Fija un ancho específico para la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
   border-radius: 8px; /* Esquina redondeada para la imagen */
+  margin-right: 20px; /* Agrega espacio entre la imagen y el texto */
 }
 
 .test h3 {
-  margin-top: 10px;
+  margin-top: 0; /* Elimina el margen superior para la etiqueta de encabezado */
+  text-align: center;
 }
 
+.test div{
+  margin-right: 20px;
+}
+
+.test h2{
+  text-align: center;
+}
 /* Añade reglas de estilo para las secciones adicionales según sea necesario */
 /* Agrega media queries según sea necesario */
 @media (max-width: 600px) {
   .test {
-    max-width: 100%; /* Cambia el ancho máximo para pantallas más pequeñas */
+    flex-direction: column; /* Cambia de fila a columna para pantallas más pequeñas */
+    text-align: center; /* Alinea el texto al centro en pantallas más pequeñas */
+  }
+
+  .test img {
+    width: 100%; /* La imagen ocupará el 100% del contenedor */
+    margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y el texto en pantallas más pequeñas */
   }
 }

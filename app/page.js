@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Image
+        className={styles.img}
         src="/logo.jpg"
         width={1000}
         height={500}
@@ -17,7 +18,7 @@ export default function Home() {
       <Link href="/dashboard">ENTRAR</Link>
      </button>
      <div>
-      <MusicPlayer/>
+      {/* <MusicPlayer/> */}
      </div>
     </main>
   )

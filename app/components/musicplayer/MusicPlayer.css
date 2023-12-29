@@ -1,0 +1,40 @@
+/* MusicPlayer.css */
+
+/* Personaliza el reproductor de audio según tus preferencias */
+.react-h5-audio-player {
+    background-color: rgba(45, 220, 243, 0.55); /* Fondo transparente rojo */
+    border-radius: 20px;
+    width: min-content;
+    padding: 16px;
+    color:black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el reproductor en la página */
+  }
+  
+  /* Estilo para los controles de reproducción */
+  .react-h5-audio-player-controls {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para los botones de reproducción, siguiente y anterior */
+  .react-h5-audio-player-play-pause, 
+  .react-h5-audio-player-skip-forward, 
+  .react-h5-audio-player-skip-backward {
+    color: #333333;
+    font-size: 20px;
+  }
+  
+  /* Estilo para la barra de progreso */
+  .react-h5-audio-player-progress-container {
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para la barra de progreso llena */
+  .react-h5-audio-player-progress {
+    background-color: #4caf50;
+    border-radius: 4px;
+  }
+  

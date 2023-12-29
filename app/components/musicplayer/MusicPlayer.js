@@ -3,16 +3,19 @@
 import { useState } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import './MusicPlayer.css';
 
 const MusicPlayer = () => {
   const [currentTrack, setTrackIndex] = useState(0)
   // Lista de canciones
   const playlist = [
-    { name: 'Drake Bell - Fuego Lento', src: '/music/Drake Bell - Fuego Lento (Official Video).mp3' },
-    { name: 'Greeicy, Anitta - Jacuzzi', src: '/music/Greeicy, Anitta - Jacuzzi.mp3' },
-    { name: 'La Player Bandolera Zion & Lennox', src: '/music/La Player Bandolera Zion & Lennox Letra.mp3' },
-    { name: 'POR PERRO - SEBASTIAN YATRA', src: '/music/POR PERRO - SEBASTIAN YATRA _  FT. LUIS FIGUEROA x LARY OVER _   LETRA .mp3' },
-    { name: 'You Salsa - Duro Y Suave', src: '/music/You Salsa - Duro Y Suave.mp3' },
+    { name: 'GODS', src: '/music/GODS ft. NewJeans (뉴진스) (Official Music Video)  Worlds 2023 Anthem - League of Legends.mp3' },
+    { name: 'THE BADDEST', src: '/music/KDA - THE BADDEST ft. (G)I-DLE, Bea Miller, Wolftyla (Official Lyric Video)  League of Legends.mp3' },
+    { name: 'MORE', src: '/music/KDA - MORE ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine (Official Music Video).mp3' },
+    { name: 'Enemy', src: '/music/Imagine Dragons & JID - Enemy (from the series Arcane_ League of Legends)  Official Music Video.mp3' },
+    { name: 'Warriors', src: '/music/Warriors (ft. Imagine Dragons)  Worlds 2014 - League of Legends.mp3' },
+    { name: 'POPSTARS', src: '/music/KDA - POPSTARS (ft. Madison Beer, (G)I-DLE, Jaira Burns)  Music Video - League of Legends.mp3' },
+    { name: 'Legends Never Die', src: '/music/Legends Never Die (ft. Against The Current)  Worlds 2017 - League of Legends.mp3' },
     // Agrega más canciones según sea necesario
   ]
   const handleClickNext = () => {
@@ -30,6 +33,7 @@ const handleEnd = () => {
 }
   return (
     <AudioPlayer
+    className="react-h5-audio-player"
     autoPlay
     volume="0.5"
     src={playlist[currentTrack].src}
