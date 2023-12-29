@@ -1,0 +1,30 @@
+/* cards.module.css */
+
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 400px; /* Ancho máximo de la tarjeta */
+}
+
+.test img {
+  width: 100%; /* La imagen ocupará el 100% del contenedor */
+  border-radius: 8px; /* Esquina redondeada para la imagen */
+}
+
+.test h3 {
+  margin-top: 10px;
+}
+
+/* Añade reglas de estilo para las secciones adicionales según sea necesario */
+/* Agrega media queries según sea necesario */
+@media (max-width: 600px) {
+  .test {
+    max-width: 100%; /* Cambia el ancho máximo para pantallas más pequeñas */
+  }
+}

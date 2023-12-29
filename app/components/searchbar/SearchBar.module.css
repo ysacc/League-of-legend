@@ -1,0 +1,23 @@
+/* SearchBar.module.css */
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .searchInput {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .searchButton {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .resultContainer {
+    margin-top: 20px;
+  }
+  
